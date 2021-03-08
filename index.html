@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fuente/style.css" rel="stylesheet">
+    <link href="css/stylos.css" rel="stylesheet">
+    <title>Modal Usuario</title>
+</head>
+<body>
+    <section class="main">
+        <header>
+            <div id="logo">
+                <p>Startup</p>
+            </div>
+            <form action="" id="container-barra">
+                <input type="text" name="buscar" id="barra-buscar" placeholder="Buscar">
+            </form>
+            <div id="boton-container">
+            <button id="btn-user" class="none"><span class="icon-user"></span></button>
+            <button id="btn-menu" class="none"><span class="icon-menu"></span></i></button>
+            </div>
+            <nav id="modal-menu" class="activo">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Tienda</a></li> 
+                    <li><a href="#">Carrito</a></li>   
+                </ul>
+            </nav>
+            <nav id="modal-user" class="activo">
+                    <div id="user-img"><span class="icon-user"></span></div>
+                <div id="iniciar-sesion" class="logins">
+                    <p> Iniciar Sesión</p>
+                    <form id="formulario" method="POST">
+                        <input type="email" name="email" placeholder="CORREO">
+                        <input type="password" name="password" id="password" placeholder="CONTRASEÑA">
+                        <div id="container-see"><input type="checkbox" name="seepass" id="seepass" checked="none"><label>Mostrar Contraseña<label></div>
+                        <input type="submit"  value="INICIAR SESIÓN">
+                    </form>
+                    <a href="#" id="new-account">Crear Cuenta</a>
+                </div>
+                <div id="datos-usuario" class="logout">    
+                    <p><b>Nombre de Usuario</b></p><p id="user-name">unknow</p>
+                    <p><b>Email</b></p><p id="user-email">usuarionuevo@example.com</p>
+                    <p><b>Tipo de usuario:</b></p><p id="user-type">Cliente</p>
+                    <a href="#" id="user-email" class="user-email">Configuración de Cuenta</a>
+                    <a href="#" id="session" class="session-close">Cerrar Sesión</a>
+                       
+                </div>
+            </nav>
+        </header>
+        <section>
+           
+        </section>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
