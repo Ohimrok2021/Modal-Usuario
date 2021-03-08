@@ -1,0 +1,30 @@
+
+create table tusuarios(	
+	nId int auto_increment primary key,
+	cFirst_name varchar(50),
+	cLast_name varchar(50),
+	cPhone_number char(9),
+	cEmail varchar(40),
+	cLevel varchar(20),
+	cPassword varchar(30)
+);
+#alter table tusuarios add primary key (nId);
+insert into tusuarios values("","Eduardo","Astocondor Carrillo","992511486","eduardo-9552@hotmail.com","administrador","eduardo123");
+insert into tusuarios values("","Alexander","Astocondor Carrillo","992411154","alexander@hotmail.com","cliente","alexander123");
+insert into tusuarios values("","Jhonny","Vales Baltazar","952489487","jhonnyvales@hotmail.com","cliente","jhonny123");
+insert into tusuarios values("","Pedro","Vales Baltazar","989345456","pedrovale@hotmail.com","cliente","pedro123");
+insert into tusuarios values("","Liz","Baltazar Astocondor","978365189","lisbaltazar@hotmail.com","cliente","liz123");
+insert into tusuarios values("","Carmen","Astocondor Vilcapoma","963789357","carmenastocondor@hotmail.com","cliente","carmen123");
+insert into tusuarios values("","Justino","Baltazar Cahuamaca","936952753","justino@hotmail.com","vendedor","justino123");
+insert into tusuarios values("","Ruli","Astocondor Vilcapoma","936984586","rulibaltazar@hotmail.com","vendedor","ruli123");
+insert into tusuarios values("","Roxy","Migurdia","9989578692","rmigurdia@hotmail.com","administrador","roxy123");
+insert into tusuarios values("","Wilmer","Vales Joaquin","976356951","wilmervale@hotmail.com","cliente","wilmer123");
+
+create table tuser_imagen(
+	nIdimg int auto_increment primary key,
+	nId int not null,
+	cName tinytext,
+	bImagen blob);
+alter table tuser_imagen add foreign key (nId) references tusuarios(nId);
+
+		
